@@ -1,0 +1,40 @@
+// flexe
+$accent: #3b0732;
+
+
+%mer-400{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+}
+
+
+%mer-700{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+}
+
+%italic-400{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%italic-700{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+@mixin bg($p,$s){
+  background-image: url($p);
+  background-size: $s;
+  background-repeat: no-repeat;
+}
+
+
+@mixin flex($j, $a){
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
